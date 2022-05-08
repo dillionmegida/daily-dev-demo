@@ -20,6 +20,8 @@ const Aside = styled.aside`
   width: 250px;
   border-right: 1px solid #2d323c;
   height: calc(100vh - var(--header-size));
+  position: sticky;
+  top: var(--header-size);
 
   .link {
     align-items: center;
@@ -168,7 +170,7 @@ export default function Sidebar() {
           <span className="section__title">Discover</span>
           <ul>
             {discoverLinks.map((link) => (
-              <Link to="" className="flex link">
+              <Link key={link.label} to="" className="flex link">
                 <link.Icon color="#fff" size={18} />
                 <span className="link__label">{link.label}</span>
               </Link>
@@ -180,7 +182,7 @@ export default function Sidebar() {
           <span className="section__title">Manage</span>
           <ul>
             {manageLinks.map((link) => (
-              <Link to="" className="flex link">
+              <Link key={link.label} to="" className="flex link">
                 <link.Icon color="#fff" size={18} />
                 <span className="link__label">{link.label}</span>
               </Link>
@@ -192,7 +194,7 @@ export default function Sidebar() {
           <div className="section">
             <ul>
               {footerLinks.map((link) => (
-                <Link to="" className="flex link">
+                <Link key={link.label} to="" className="flex link">
                   <link.Icon color="#fff" size={18} />
                   <span className="link__label">{link.label}</span>
                 </Link>

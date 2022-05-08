@@ -3,10 +3,15 @@ import styled from "styled-components"
 const SHeader = styled.div`
   display: flex;
   justify-content: space-between;
+  background-color: inherit;
   height: var(--header-size);
   align-items: center;
   border-bottom: 1px solid #2d323c;
   padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
 
   .daily-dev-logo {
     width: 120px;

@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Header from "./Header"
+import MainContent from "./main/MainContent"
 import Sidebar from "./Sidebar"
 
 const Container = styled.div`
@@ -15,6 +16,7 @@ export default function Layout() {
       <Header />
       <div className="flex">
         <Sidebar />
+        <MainContent />
       </div>
     </Container>
   )
