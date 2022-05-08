@@ -29,3 +29,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+button {
+  background: none;
+  border: none;
+}
+
+ul {
+  padding: 0;
+}

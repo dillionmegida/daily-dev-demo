@@ -3,7 +3,7 @@ import styled from "styled-components"
 const SHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: var(--header-size);
   align-items: center;
   border-bottom: 1px solid #2d323c;
   padding: 0 20px;
